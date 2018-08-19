@@ -1,0 +1,24 @@
+/**index.wxss**/
+.centerview{
+  width:80%;
+  height:600rpx;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  background-color: bisque;
+  border-style: double;
+  border-color: aqua;
+}
+
+.status-label{
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 70%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  border-style: double;
+  border-color: aqua;
+}

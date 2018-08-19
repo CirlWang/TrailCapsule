@@ -1,0 +1,14 @@
+.bottombar{
+  font-size: 20px;
+  
+}
+
+.bottom-view{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom:0rpx;
+  height: 10%;
+  width: 100%;
+}

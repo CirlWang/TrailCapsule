@@ -1,0 +1,142 @@
+.topbox {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  height: 110rpx;
+  width: 100%;	
+  background-color: aqua;
+}
+
+.topbox-backbtn {
+  width:20%;
+  height: 80%;
+  font-size: 20px; 
+  align-self: center;
+  border-style: double;
+  border-color: black;
+}
+
+.topbox-savebtn {
+  width:20%;
+  height: 80%;
+  font-size: 20px; 
+  align-self: center;
+  border-style: double;
+  border-color: black;
+}
+
+.tittlebox {
+  display: flex;
+  flex-direction: row;  
+  height: 110rpx;
+  width: 100%;	
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.tittle-center-view {
+  display: flex;
+  flex-direction: row;  
+  height: 100%;
+  width: 80%;	
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  border-color: black;
+}
+
+.tittle-label { 
+  font-size: 15px;
+  line-height: 150%;
+  border-style: double;
+  border-color: black;
+}
+
+.tittle-input { 
+  font-size: 20px;
+  width: 80%;
+  height: 80%;
+  line-height: 150%;
+  border-style: double;
+  border-color: black;
+}
+
+.text-view { 
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20rpx;
+  background-color: blanchedalmond;
+}
+
+.image-view { 
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-style: double;
+  border-color: black;
+}
+
+.image-view-item { 
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  line-height: 40px;
+  margin-left: 5px;
+  border-style: double;
+  border-color: black;
+}
+
+.image-view-addbtn { 
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  line-height: 40px;
+  margin-left: 5px;
+  border-style: double;
+  border-color: black;
+}
+
+.text-area { 
+  width: 100%;
+  font-size: 20px;
+  border-style: double;
+  border-color: black;
+}
+
+.add-item-btn { 
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 10px;
+  line-height: 120rpx;
+  font-size: 30px;
+  border-style: double;
+  border-color: black;
+}
+
+.weui-uploader__input-box {
+  float: left;
+  position: relative;
+  margin-right: 9px;  
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d9d9d9;
+}
+.weui-uploader__input-box:before, .weui-uploader__input-box:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+.weui-uploader__input-box:before {
+  width: 2px;
+  height: 39.5px;
+}
+.weui-uploader__input-box:after {
+  width: 39.5px;
+  height: 2px;
+}

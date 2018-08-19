@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='centerview'>
+    <view class='status-label' wx:if="{{complete}}">你的胶囊已生成</view>
+    <view class='status-label' wx:else>胶囊生成中</view>
+  </view>
+</view>

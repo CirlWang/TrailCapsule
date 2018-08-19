@@ -1,0 +1,88 @@
+.bg {
+  position: fixed;
+  display: flex;
+  flex-direction: column;  
+  height: 90%;
+  width: 90%;
+  margin: 5% 5% 5% 5%;
+  background-color: blue;
+}
+
+.topbox {
+  display: flex;
+  flex-direction: row;  
+  height: 110rpx;
+  width: 100%;	
+  justify-content: space-between;
+  background-color: aqua;
+}
+
+.topbox-backbtn {
+  width:20%;
+  height: 80%;
+  font-size: 20px; 
+  align-self: center;
+  border-style: double;
+  border-color: black;
+}
+
+.titlebox {
+  display: flex;
+  flex-direction: row;  
+  height: 110rpx;
+  width: 100%;	
+  justify-content:  center;
+  background-color: antiquewhite;
+}
+
+.topbox-title {
+  width:auto;
+  height: 80%;
+  font-size: 20px; 
+  display: flex;
+  justify-content: center;
+  line-height: 80rpx;
+  border-style: double;
+  border-color: black;
+}
+
+.scrollview{
+  width:100%;
+  height: auto;
+  display: flex;
+  border-style: double;
+  border-color: black;
+}
+
+.scrollview-item{
+  width:80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: double;
+  border-color: green;
+}
+
+.scrollview-item_1{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scrollview-item-images{
+  width:100%;
+  height: auto;
+  display: flex;  
+}
+
+.scrollview-item-text{
+  width:auto;
+  height: auto;
+  display: flex;
+  word-break: break-all;
+  white-space: pre-line;
+}

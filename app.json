@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/Province/province",
+    "pages/index/index",
+    "pages/CapsuleText/capsuletext",
+    "pages/Mission/mission",  
+    "pages/EditorMission/editormission",    
+    
+    "pages/CreateCapsule/createcapsule",        
+    "pages/Search/search",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+
+    "disableScroll": "false",
+    
+    "navigationBarBackgroundColor": "#c0c0c0",
+    "navigationBarTitleText": "旅行胶囊",
+    "navigationBarTextStyle": "light"
+  }
+}

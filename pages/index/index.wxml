@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <!--<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+
+  <view class='topbox'>    
+    <button class='topbox-button' bindtap='countryBindTap'>
+      中国胶囊
+    </button>
+    <button class='topbox-button'>
+      国外胶囊
+    </button>
+  </view>
+
+  <scroll-view scroll-y class="scrollview">
+    <view id="1" class="scrollview-item"><button class='scrollview-item-btn'>推荐胶囊#1</button></view>
+    <view id="2" class="scrollview-item"><button class='scrollview-item-btn'>推荐胶囊#2</button></view>
+    <view id="3" class="scrollview-item"><button class='scrollview-item-btn'>推荐胶囊#3</button></view>
+    <view id="4" class="scrollview-item"><button class='scrollview-item-btn'>推荐胶囊#4</button></view>
+    <view id="5" class="scrollview-item"><button class='scrollview-item-btn'>推荐胶囊#5</button></view>
+    <view id="6" class="scrollview-item"><button class='scrollview-item-btn'>推荐胶囊#6</button></view>
+    <view id="7" class="scrollview-item"><button class='scrollview-item-btn'>推荐胶囊#7</button></view>
+  </scroll-view>
+
+</view>
+
+<import src="../../utils/util.wxml"/>
+<template is="tabBar" />

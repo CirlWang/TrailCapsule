@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <!--<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+
+  <view class='topbox'>
+    <image class='topbox-backbtn' src='../../images/back.png'>  </image>
+    <view class='topbox-title'> 中国胶囊 </view>
+  </view>
+
+  <view class='province-title' wx:if="{{provinceTitle}}"> 
+    <label> {{provinceTitle}}省  </label>
+  </view>
+  <view class='city-title' wx:if="{{cityTitle}}"> 
+    <label> {{cityTitle}}市   </label>
+  </view>
+
+  <view class='center-view' wx:if="{{provinceTitle && !cityTitle}}">
+    <view class='center-item-view' wx:for="{{cities}}" data-name='{{item}}' bindtap='selectCity'>{{item}}</view>
+  </view>
+  <view class='center-lastview' wx:elif="{{provinceTitle && cityTitle}}">
+    生成胶囊中
+  </view>
+  <view class='center-view' wx:else>
+    <view class='center-item-view' wx:for="{{provinces}}" data-name='{{item}}' bindtap='selectProvince'>{{item}}</view>
+  </view>
+
+</view>
+
+<import src="../../utils/util.wxml"/>
+<template is="tabBar" />

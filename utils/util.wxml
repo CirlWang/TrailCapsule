@@ -1,0 +1,15 @@
+<!-- <template name="bottomBar">
+  <view style='position: absolute; display: flex;flex-direction: row;justify-content: space-between;bottom:0rpx;height: 10%; width: 100%;'>
+    <button bindtap='' style='width:33.3%;height: 100%; font-size: 95%; line-height: 350%;'>朋友的胶囊</button>
+    <button bindtap='' style='background-color: blue;width:33.3%;height: 100%; font-size: 95%; line-height: 350%;'>任务胶囊</button>
+    <button bindtap='' style='width:33.3%;height: 100%; font-size: 95%; line-height: 350%;'>我的帐号</button>
+  </view>
+</template> -->
+
+<template name="tabBar">
+  <view style='position: absolute; bottom:0rpx; height: 10%; width: 100%;'>
+    <button bindtap='btnSearch' style='display: inline-block; width:33.3%; height: 100%; font-size: 95%; line-height: 350%;'>朋友的胶囊</button>
+    <button bindtap='btnSearch' style='display: inline-block; width:33.3%; height: 100%; font-size: 95%; line-height: 350%;'>任务胶囊</button>
+    <button bindtap='btnSearch' style='display: inline-block; width:33.3%; height: 100%; font-size: 95%; line-height: 350%;'>我的帐号</button>
+  </view>
+</template>

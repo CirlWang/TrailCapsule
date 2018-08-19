@@ -1,0 +1,15 @@
+/**app.wxss**/
+.container {  
+  overflow-x: hidden;
+  height: 1280rpx;
+  font-size: 30rpx;
+  font-family: -apple-system-font,microsoft yahei, Helvetica Neue, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+} 
+
+/*color: #222;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #f4a;
+  font-size: 30rpx;
+  font-family: -apple-system-font,microsoft yahei, Helvetica Neue, Helvetica, sans-serif;*/

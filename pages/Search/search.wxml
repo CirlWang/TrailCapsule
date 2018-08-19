@@ -1,0 +1,21 @@
+<view class="container">  
+  <view class="search-area">
+    <view class="search-input">
+        <input style='height:100rpx; line-height:100rpx; ' placeholder="输入你想学习的技能" focus="{{focus}}" />
+        <!--<view class="btn-area">
+          <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+        </view>-->
+    </view>
+    <view class="search-button" bindtap='searchBinTap'>
+        <button> 搜索 </button>
+    </view>
+  </view>
+  
+  <view class="result-items">
+    <view class="result-item" wx:for="{{arrary}}">
+        <label class='result-label' style='width:10%'>{{item.id}}</label>
+        <label class='result-label' style='width:30%'>{{item.name}}</label>
+        <label class='result-label' style='width:60%'>{{item.label}}</label>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+  <!--<view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+
+  <view class='topbox'>
+    <view class='topbox-backbtn'>
+      <button style='width:100%;height:100%;line-height: 80rpx;'>返回</button>
+    </view>
+    <view class='topbox-savebtn' bindtap='SaveItemsToMissionPlane'>
+      <button style='width:100%;height:100%;line-height: 80rpx;'>保存</button>
+    </view>
+  </view>
+
+  <view class='tittlebox'>
+    <view class='tittle-center-view'>
+      <text class='tittle-label'> 标题: </text>
+      <input maxlength='10' class='tittle-input' bindblur='titleFinish' value='{{item.title}}'>  </input>
+    </view>
+  </view>
+
+  
+  <view class='text-view' wx:for='{{item.allItem}}' wx:key='{{item.id}}'>
+    <view class='image-view'>
+      <block wx:for='{{item.paths}}'>
+        <image class="image-view-addbtn" src="{{item.id}}" data-src="{{item.id}}" bindtap="previewImage"></image>
+      </block>
+
+      <view class='weui-uploader__input-box' bindtap='choseImge' data-id="{{item.id}}" wx:if='{{item.paths.length<imagesMax}}'>  </view>
+      
+    </view>  
+
+    <textarea auto-height='true' class='text-area' bindblur='textFinish' data-id='{{item.id}}' placeholder='请输入内容' value='{{item.text}}'>  </textarea>
+  </view>
+
+  <button class='add-item-btn' bindtap='addNewItem'>+</button>
+</view>
